@@ -1,0 +1,2 @@
+#!/bin/bash
+terminal -e nvim /home/lorenz/doc/myfiles/notes/todo.md

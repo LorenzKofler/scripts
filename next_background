@@ -1,0 +1,2 @@
+#!/bin/bash
+feh --randomize --bg-max /home/lorenz/pics/wallpaper2/*
