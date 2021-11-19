@@ -1,2 +1,0 @@
-#!/bin/bash
-gopass ls --flat | run_rofi -dmenu -p gopass | xargs --no-run-if-empty gopass show -o | head -n 1 | xdotool type --clearmodifiers --file -
