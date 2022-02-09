@@ -1,3 +1,3 @@
 #!/bin/bash
-terminal -e nvim ${HOME}/doc/notes/todo.md
+terminal -e nvim ${HOME}/doc/todo.md
 

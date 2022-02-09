@@ -3,10 +3,10 @@
 
 MIN_BAT=5
 MAX_BAT=100
-UNPLUGGED=`cat /sys/bus/acpi/drivers/battery/*/power_supply/BAT?/status|grep -i discharging`
-BAT_PERCENTAGE=`cat /sys/bus/acpi/drivers/battery/*/power_supply/BAT?/capacity`
 
 while true ; do
+UNPLUGGED=`cat /sys/bus/acpi/drivers/battery/*/power_supply/BAT?/status|grep -i discharging`
+BAT_PERCENTAGE=`cat /sys/bus/acpi/drivers/battery/*/power_supply/BAT?/capacity`
 
 if [ $BAT_PERCENTAGE -le $MIN_BAT ]; then # Battery under low limit
  notify-send "Battery under $MIN_BAT. Please plug in the adapter"
